@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Nobody 2",
+    "year": "2025",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "rating": 7.2,
+    "overview": "Former assassin Hutch Mansell takes his family on a nostalgic vacation to a small-town theme park, only to find himself in a deadly game of cat and mouse with a ruthless crime syndicate.",
+    "director": "Ilya Naishuller",
+    "cast": [
+      "Bob Odenkirk",
+      "Connie Nielsen",
+      "Christopher Lloyd"
+    ]
+  },
+  {
+    "title": "The Naked Gun",
+    "year": "2025",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "rating": 6.8,
+    "overview": "Only one man has the particular set of skills... to lead Police Squad and save the world: Lt. Frank Drebin.",
+    "director": "Akiva Schaffer",
+    "cast": [
+      "Liam Neeson",
+      "Pamela Anderson",
+      "Kevin Durand"
+    ]
+  },
+  {
+    "title": "The Conjuring: Last Rites",
+    "year": "2025",
+    "genres": [
+      "Horror"
+    ],
+    "rating": 6.9,
+    "overview": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious disappearances and supernatural entities.",
+    "director": "Michael Chaves",
+    "cast": [
+      "Patrick Wilson",
+      "Vera Farmiga",
+      "Sterling Jerins"
+    ]
+  }
+]

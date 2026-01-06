@@ -1,0 +1,131 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // ===== HELPER FUNCTIONS =====
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && 
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    function isOwnerOrAdmin(userId) {
+      return isOwner(userId) || isAdmin();
+    }
+    
+    // ===== ADMIN COLLECTION =====
+    match /admins/{adminId} {
+      allow read, write: if isAdmin();
+    }
+    
+    // ===== USERS COLLECTION =====
+    match /users/{userId} {
+      allow read, write: if isOwnerOrAdmin(userId);
+      
+      // User's bookings subcollection
+      match /bookings/{bookingId} {
+        allow read, write: if isOwnerOrAdmin(userId);
+      }
+      
+      // User's food orders subcollection
+      match /food_orders/{orderId} {
+        allow read, write: if isOwnerOrAdmin(userId);
+      }
+      
+      // User's movie bookings subcollection
+      match /movie_bookings/{bookingId} {
+        allow read, write: if isOwnerOrAdmin(userId);
+      }
+      
+      // User's notification records subcollection
+      match /notifications/{notificationId} {
+        allow read, write: if isOwnerOrAdmin(userId);
+      }
+      
+      // User's settings subcollection (including notification preferences)
+      match /settings/{settingId} {
+        allow read, write: if isOwnerOrAdmin(userId);
+      }
+    }
+    
+    // ===== MOVIES COLLECTION =====
+    match /movies/{movieId} {
+      allow read: if true;  // Anyone can read movies
+      allow write: if isAdmin();  // Only admins can modify movies
+    }
+    
+    match /regions/{regionId} {
+      allow read: if true;
+      allow write: if request.auth != null; // Only authenticated users can write
+    }
+    
+    match /cinemas/{cinemaId} {
+      allow read: if true;
+      allow write: if request.auth != null; // Only authenticated users can write
+    }
+    
+    // ===== FOOD ITEMS COLLECTION =====
+    match /food_items/{itemId} {
+      allow read: if true;  // Anyone can read food items
+      allow write: if isAdmin();  // Only admins can manage food items
+    }
+    
+    // ===== SEATS COLLECTION =====
+    match /seats/{seatId} {
+      allow read: if true;  // Anyone can read seat availability
+      allow write: if isAuthenticated();  // Authenticated users can book seats
+    }
+    
+    // ===== FEEDBACK COLLECTION =====
+    match /feedback/{feedbackId} {
+      allow read: if isAdmin();  // Only admins can read feedback
+      allow create: if isAuthenticated();  // Any authenticated user can submit feedback
+      allow update, delete: if isAdmin();  // Only admins can modify feedback
+    }
+    
+    // ===== COLLECTION GROUP QUERIES =====
+    // For admin access to all bookings across users
+    match /{path=**}/bookings/{bookingId} {
+      allow read: if isAdmin() || 
+                     (isAuthenticated() && resource.data.status == 'pending_cancellation');
+      allow write: if isAdmin();
+    }
+    
+    // For admin access to all food orders across users
+    match /{path=**}/food_orders/{orderId} {
+      allow read, write: if isAdmin();
+    }
+    
+    // For admin access to all movie bookings across users
+    match /{path=**}/movie_bookings/{bookingId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Cancellation history collection rules
+    match /cancellation_history/{historyId} {
+      allow read: if isAdmin();  // Only admins can read cancellation history
+      allow create, update: if isAdmin();  // Only admins can log cancellation history
+      allow delete: if false;  // Never allow deletion of history records
+    }
+    
+    // Food cancellation history collection rules
+    match /food_cancellation_history/{historyId} {
+      allow read: if isAdmin();  // Only admins can read food cancellation history
+      allow create, update: if isAdmin();  // Only admins can log food cancellation history
+      allow delete: if false;  // Never allow deletion of history records
+    }
+    // ===== DEFAULT DENY =====
+    // Explicitly deny all other access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
