@@ -113,81 +113,91 @@
 
 | Login Screen | 
 
-<img width="787" height="572" alt="image" src="https://github.com/user-attachments/assets/fd65e4bc-f67e-45da-a1cb-30862cc4bc42" />
+<img width="825" height="587" alt="image" src="https://github.com/user-attachments/assets/d5e140f7-b09e-470e-87b2-403de9a4e7a9" />
 
 
 | Home Screen | 
 
-<img width="609" height="550" alt="image" src="https://github.com/user-attachments/assets/6a6f4da4-e269-44af-883a-20a8d1262dcd" />
+<img width="637" height="548" alt="image" src="https://github.com/user-attachments/assets/bc4cfe73-d1f3-4938-95db-372372371c07" />
+
 
 
 | Movie Screen |
 
-<img width="670" height="630" alt="image" src="https://github.com/user-attachments/assets/ec24879f-125f-47fd-b0ae-238ba4156161" />
+<img width="733" height="676" alt="image" src="https://github.com/user-attachments/assets/eebfd293-37be-4a90-9330-dc38728d6064" />
+
 
 
 | F&B Screen |
 
-<img width="677" height="602" alt="image" src="https://github.com/user-attachments/assets/5fb58255-ce61-4f63-a208-7405aa9ddcde" />
+<img width="762" height="627" alt="image" src="https://github.com/user-attachments/assets/42a7b2d1-d61a-4579-8659-919f797f29fc" />
 
-<img width="709" height="544" alt="image" src="https://github.com/user-attachments/assets/1c80b9dd-4b2a-4cd7-9eba-4c2fa015340b" />
+
+<img width="814" height="630" alt="image" src="https://github.com/user-attachments/assets/f42329ad-2fa4-4b10-9d41-7f73eb36b7d1" />
+
 
 
 | User Profile Screen |
 
-<img width="600" height="581" alt="image" src="https://github.com/user-attachments/assets/80853286-3353-4e2d-a064-f52a64c87dce" />
+<img width="676" height="662" alt="image" src="https://github.com/user-attachments/assets/4a92d58b-64a2-4d0e-b61a-394e0bca27d6" />
+
 
 
 |Feedback Screen |
 
-<img width="507" height="498" alt="image" src="https://github.com/user-attachments/assets/d42eb32d-c912-4aa5-8320-c6e0450310eb" />
+<img width="576" height="583" alt="image" src="https://github.com/user-attachments/assets/e8a41478-2757-4ce7-8878-d772a1158d3c" />
+
 
 | Booking History |
 
-<img width="707" height="725" alt="image" src="https://github.com/user-attachments/assets/c7cca68c-daf3-4a4f-843b-2169bf506fbc" />
+<img width="608" height="609" alt="image" src="https://github.com/user-attachments/assets/eeeffd10-08a8-48b8-8afc-a9b39b1b369d" />
+
 
 | Movie Details Page |
 
-<img width="502" height="590" alt="image" src="https://github.com/user-attachments/assets/72f13a3f-d023-45e1-94dd-f472478250cc" />
+<img width="591" height="616" alt="image" src="https://github.com/user-attachments/assets/03cc9c39-3043-40a3-847b-ffbdf5f06707" />
+
 
 | Seat Selection |
 
-<img width="523" height="440" alt="image" src="https://github.com/user-attachments/assets/66f2e2d5-fad7-4f4d-b5b3-cad7b16900ad" />
+<img width="606" height="518" alt="image" src="https://github.com/user-attachments/assets/64eb1eaf-15b1-4d46-b7a2-ff8d7c089bb7" />
 
 
-<img width="535" height="386" alt="image" src="https://github.com/user-attachments/assets/015e29b3-efdf-4993-9595-cee5301603e0" />
+<img width="600" height="428" alt="image" src="https://github.com/user-attachments/assets/df6c15a6-b02d-43a5-98b6-e0166bf5385f" />
 
 
-<img width="550" height="394" alt="image" src="https://github.com/user-attachments/assets/e165afdf-4c3b-44c1-91cb-8d0a109f1757" />
+<img width="626" height="435" alt="image" src="https://github.com/user-attachments/assets/8bb5fad3-e46a-47ca-b8df-635eddd9203b" />
 
 
 | Cinema Locator Screen |
 
-<img width="480" height="457" alt="image" src="https://github.com/user-attachments/assets/ea054a32-96ab-45a4-a702-9871b2e54b11" />
+<img width="531" height="502" alt="image" src="https://github.com/user-attachments/assets/050fc218-3b3d-4f3f-badd-856b5cf9c47e" />
 
 
 | Chatbot |
 
 
-<img width="245" height="486" alt="image" src="https://github.com/user-attachments/assets/00ef0de4-08da-46bc-9f2f-c8bf7da01c51" />
+<img width="258" height="546" alt="image" src="https://github.com/user-attachments/assets/5b75c8b6-8f0a-4993-ab1f-5fb1e007741c" />
 
 
 | Recomendation Screen |
 
 
-<img width="514" height="485" alt="image" src="https://github.com/user-attachments/assets/eae226e2-d6f5-438a-a987-142c5d61d410" />
+<img width="584" height="539" alt="image" src="https://github.com/user-attachments/assets/79b11995-e7dd-46d4-86f6-21bf2645ec5d" />
 
 
 | Admin Screen |
 
 
-<img width="410" height="432" alt="image" src="https://github.com/user-attachments/assets/dcee5972-e25d-43f9-a664-96e38ff56d5f" />
+<img width="451" height="475" alt="image" src="https://github.com/user-attachments/assets/5d8b3fd3-0fb4-4fea-a931-5ccd5c12cb17" />
+
 
 
 | Analytics Overview Screen |
 
 
-<img width="476" height="487" alt="image" src="https://github.com/user-attachments/assets/36cb4ac7-293e-41cc-965f-bc3bc5151e04" />
+<img width="509" height="532" alt="image" src="https://github.com/user-attachments/assets/1f4223fc-d43b-4373-996f-c884e0a8ed05" />
+
 
 
 
